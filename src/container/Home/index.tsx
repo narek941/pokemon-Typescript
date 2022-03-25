@@ -8,14 +8,14 @@ import styles from "./Home.module.scss";
 
 const Home: React.FC = () => {
   const dispatch = useDispatch();
-  const pokemons: any = useSelector(selectPokemons);
+  const pokemons: IPokemon[] = useSelector(selectPokemons);
   const isLoading: boolean = useSelector(selectIsLoading);
 
   const offset: number = 300;
 
   useEffect(() => {
     dispatch(getPokemons(offset, 0));
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className={styles.container}>

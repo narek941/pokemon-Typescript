@@ -21,7 +21,7 @@ interface IArticle {
 
 
   interface IPokemon {
-    id: string
+    id: number
     img: string
     name: string
     url: string

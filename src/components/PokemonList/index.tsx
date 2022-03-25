@@ -1,10 +1,14 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { PokemonItem } from "../index";
 import styles from "./PokemonList.module.scss";
 import loader from "../../assets/img/loading.gif";
+interface IPokemonListProps {
+  pokemons: IPokemon[];
+  isLoading: boolean;
+}
 
-const PokemonList: React.FC<any> = ({ pokemons, isLoading }) => {
-  const pokemonRender: any = pokemons?.map((item: any) => {
+const PokemonList: React.FC<IPokemonListProps> = ({ pokemons, isLoading }) => {
+  const pokemonRender = pokemons?.map((item: IPokemon): ReactElement => {
     return (
       <PokemonItem key={item.id} id={item.id} img={item.img} name={item.name} />
     );
