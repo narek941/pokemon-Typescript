@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  a {
+    padding: 10px;
+    &:hover {
+      background-color: #a6adbb;
+    }
+  }
+}
