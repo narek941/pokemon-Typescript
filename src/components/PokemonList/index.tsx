@@ -2,6 +2,7 @@ import React, { ReactElement } from "react";
 import { PokemonItem } from "../index";
 import styles from "./PokemonList.module.scss";
 import loader from "../../assets/img/loading.gif";
+import { IPokemon } from "../../redux/types";
 interface IPokemonListProps {
   pokemons: IPokemon[];
   isLoading: boolean;
