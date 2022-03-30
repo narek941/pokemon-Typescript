@@ -1,7 +1,7 @@
 import React from "react";
 
 const Pokemon: React.FC = () => {
-  return <div>s</div>;
+  return <div>Pokemons</div>;
 };
 
 export default Pokemon;
